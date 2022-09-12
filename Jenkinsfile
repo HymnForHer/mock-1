@@ -15,14 +15,12 @@ pipeline {
                 timeout(time: 10, unit: 'MINUTES')
             }
             steps {
-                {
-                    ansiblePlaybook(
-                        credentialsId: 'tokyoKey',
-                        playbook: 'main.yml',
-                        inventory: 'hosts',
-                        become: 'yes',
-                    )
-                }
+                ansiblePlaybook(
+                    credentialsId: 'tokyoKey',
+                    playbook: 'main.yml',
+                    inventory: 'hosts',
+                    become: 'yes',
+                )
             }
         }
     }
