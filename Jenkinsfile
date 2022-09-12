@@ -11,9 +11,6 @@ pipeline {
             }
         }
         stage("Deploy") {
-            options {
-                timeout(time: 10, unit: 'MINUTES')
-            }
             steps {
                 {
                     ansiblePlaybook(
