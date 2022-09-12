@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Build") {
             options {
-                timeout(time: 10, unit: 'MINUTES')
+                timeout(time: 15, unit: 'MINUTES')
             }
             steps {
                 sh 'Echo "Test"'
