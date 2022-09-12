@@ -7,7 +7,7 @@ pipeline {
                 timeout(time: 10, unit: 'MINUTES')
             }
             steps {
-                sh 'Echo "Test"'
+                sh 'echo "Test"'
             }
         }
         stage("Deploy") {
