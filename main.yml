@@ -3,4 +3,4 @@
   become_user: root
   tasks:
     - name: copy index.html
-      shell: aws s3 cp s3://danhdd1-s3-storage/index2.html /var/www/html/index.html
+      shell: aws s3 cp s3://danhdd1-s3-storage/index.html /var/www/html/index.html
