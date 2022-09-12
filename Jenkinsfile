@@ -17,6 +17,8 @@ pipeline {
             steps {
                 ansiblePlaybook(
                     credentialsId: 'tokyoKey',
+                    disableHostKeyChecking: true,
+                    installation : "Ansible",
                     playbook: 'main.yml',
                     inventory: 'hosts',
                     become: 'yes',
