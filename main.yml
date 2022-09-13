@@ -4,3 +4,5 @@
   tasks:
     - name: copy index.html
       shell: aws s3 cp s3://danhdd1-s3-storage/index.html /var/www/html/index.html
+
+
